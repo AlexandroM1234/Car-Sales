@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import AddedFeatures from "./components/AddedFeatures";
 import AdditionalFeatures from "./components/AdditionalFeatures";
 import Total from "./components/Total";
-import { addFeature, removeFeatures, updateTotal } from "./Actions/appActions";
+import { addFeature, removeFeatures } from "./Actions/appActions";
 const App = props => {
   const removeFeature = item => {
     // dispatch an action here to remove an item
@@ -38,6 +38,5 @@ const mapStateToProps = state => {
 
 export default connect(mapStateToProps, {
   addFeature,
-  removeFeatures,
-  updateTotal
+  removeFeatures
 })(App);
