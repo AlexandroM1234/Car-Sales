@@ -1,9 +1,11 @@
+// Action types
 export const ADD_FEATURE = "ADD_FEATURE";
 
 export const REMOVE_FEATURES = "REMOVE_FEATURES";
 
 export const UPDATE_TOTAL = "UPDATE_TOTAL";
 
+// Action creators
 export const addFeature = () => {
   return { type: ADD_FEATURE };
 };
