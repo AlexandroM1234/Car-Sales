@@ -8,6 +8,6 @@ export const addFeature = payload => {
   return { type: ADD_FEATURES, payload };
 };
 
-export const removeFeatures = () => {
-  return { type: REMOVE_FEATURES };
+export const removeFeatures = payload => {
+  return { type: REMOVE_FEATURES, payload };
 };
